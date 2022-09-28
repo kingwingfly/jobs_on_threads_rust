@@ -3,7 +3,7 @@ use std::thread::{self, JoinHandle};
 
 
 type Job = Box<dyn FnOnce() + Send + 'static>;
-pub enum Message {
+enum Message {
     Newjob(Job),
     Terminate,
 }
