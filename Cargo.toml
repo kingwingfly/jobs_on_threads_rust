@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "main",
+    "jobs",
+    "job_threads",
+    "services",
+]
